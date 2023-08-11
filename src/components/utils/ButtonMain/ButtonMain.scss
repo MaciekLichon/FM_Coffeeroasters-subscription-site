@@ -1,0 +1,19 @@
+@import '../../../styles/variables';
+
+.btn-main {
+  display: inline-block;
+  color: $clr-cream;
+  padding: 1rem 2rem;
+  background-color: $clr-cyan;
+  border-radius: 6px;
+  font-family: $ff-headers;
+  font-size: 1.125rem;
+  line-height: 1.39;
+  font-weight: $fw-black;
+
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $clr-cyan-light;
+  }
+}

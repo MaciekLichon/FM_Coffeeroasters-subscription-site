@@ -1,0 +1,96 @@
+@import './variables';
+
+body {
+  background-color: $clr-cream;
+  font-size: $fs-body-s;
+  line-height: $lh-body;
+  font-family: $ff-regular;
+  font-weight: $fw-regular;
+  color: $clr-grey-blue;
+
+  @media (min-width: $desktop) {
+    font-size: $fs-body-l;
+  }
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, .accent, .accent-small {
+  font-weight: $fw-black;
+  font-family: $ff-headers;
+}
+
+h1 {
+  font-size: $fs-h1-s;
+  line-height: $lh-h1;
+  @media (min-width: $tablet) { font-size: $fs-h1-m; }
+  @media (min-width: $desktop) { font-size: $fs-h1-l; }
+}
+
+h2 {
+  font-size: $fs-h2-s;
+  line-height: $lh-h2;
+  @media (min-width: $tablet) { font-size: $fs-h2-m; }
+  @media (min-width: $desktop) { font-size: $fs-h2-l; }
+}
+
+h3 {
+  font-size: $fs-h3-s;
+  line-height: $lh-h3;
+}
+
+h4 {
+  font-size: $fs-h4;
+  line-height: $lh-h4;
+}
+
+.accent {
+  font-size: $fs-accent-s;
+  line-height: 72px;
+  text-align: center;
+  color: $clr-grey;
+
+  @media (min-width: $tablet) {
+    font-size: $fs-accent-m;
+    line-height: 118px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: $fs-accent-l;
+    line-height: 196px;
+  }
+}
+
+.accent-small {
+  font-size: 4.5rem;
+  line-height: 1;
+  color: $clr-orange;
+}
+
+section:not(:first-of-type) {
+  margin-top: 120px;
+
+  @media (min-width: $tablet) {
+    margin-top: 144px;
+  }
+}
+
+.nav-link {
+  font-size: $fs-nav;
+  line-height: $lh-nav;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $clr-grey;
+  font-weight: $fw-bold;
+}

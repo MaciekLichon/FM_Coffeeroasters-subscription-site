@@ -1,0 +1,64 @@
+@import '../../../../styles/variables';
+
+.collection__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    gap: 2.25rem;
+    text-align: left;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-l) {
+    gap: 4.5rem;
+  }
+
+  &-image {
+    width: 200px;
+
+    @media (min-width: $tablet) {
+      width: 250px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    @media (min-width: $tablet) {
+      width: 282px;
+    }
+
+    @media (min-width: $desktop) {
+      width: auto;
+    }
+  }
+
+  &-title {
+    margin-bottom: 1rem;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &-text {
+    padding: 0 1.5rem;
+
+    @media (min-width: $tablet) {
+      padding: 0;
+    }
+  }
+}

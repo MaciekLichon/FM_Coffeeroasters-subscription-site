@@ -1,0 +1,65 @@
+@import '../../../styles/variables';
+
+.hero {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &__background {
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover;
+
+    @media (min-width: $tablet) {
+      max-height: none;
+      height: 500px;
+    }
+
+    @media (min-width: $desktop) {
+      height: 600px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $clr-cream;
+    width: 100%;
+    padding: 0 1.5rem;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+      max-width: 400px;
+      left: 0;
+      transform: translate(0, -50%);
+      text-align: left;
+      padding: 0;
+      margin-left: 3.625rem;
+    }
+
+    @media (min-width: $desktop) {
+      max-width: 500px;
+      margin-left: 5.375rem;
+    }
+  }
+
+  &__text {
+    margin-top: 1.5rem;
+    opacity: 0.8;
+
+    @media (min-width: $desktop) {
+      margin-top: 2rem;
+      padding-right: 60px;
+    }
+  }
+
+  &__btn {
+    margin-top: 2.5rem;
+
+    @media (min-width: $desktop) {
+      margin-top: 3.5rem;
+    }
+  }
+}

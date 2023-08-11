@@ -1,0 +1,19 @@
+@import '../../../styles/variables';
+
+.commitment {
+  text-align: center;
+
+  &__image {
+    border-radius: 8px;
+  }
+
+  // different font size behavior than regular h2
+  &__title {
+    margin-top: 3rem;
+    margin-bottom: 1.875rem;
+  }
+
+  &__text {
+    opacity: 0.8;
+  }
+}

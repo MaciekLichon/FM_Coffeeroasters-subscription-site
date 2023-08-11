@@ -1,0 +1,7 @@
+.list-item {
+  text-align: center;
+
+  &__title, &__text {
+    margin-top: 1.5rem;
+  }
+}

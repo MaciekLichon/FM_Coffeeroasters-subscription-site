@@ -1,0 +1,16 @@
+@import '../../../styles/variables';
+
+.headquarters {
+  text-align: center;
+
+  &__title {
+    color: $clr-grey;
+  }
+
+  &__list {
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}

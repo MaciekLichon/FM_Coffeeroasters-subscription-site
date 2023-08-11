@@ -1,0 +1,59 @@
+@import '../../../styles/variables';
+
+.nav {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+
+  &__logo {
+    height: 18px;
+  }
+
+  &__links {
+    display: flex;
+
+    @media (max-width: 767px) {
+      position: absolute;
+      z-index: 10000;
+      top: 100%;
+      left: 0;
+      display: grid;
+      grid-template-rows: 0;
+      justify-content: center;
+      width: 100%;
+      background-image: linear-gradient($clr-cream 0%, $clr-cream 50%, rgba(254, 252, 247, 0.50) 100%);
+
+      transition: grid-template-rows 0.3s;
+
+      &-open {
+        grid-template-rows: calc(100vh - 90px);
+      }
+
+      &-container {
+        overflow: hidden;
+        font-family: $ff-headers;
+        font-size: $fs-hamburger;
+        line-height: $lh-hamburger;
+        text-align: center;
+      }
+
+      &-item {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+
+  &__hamburgerBtn {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+}

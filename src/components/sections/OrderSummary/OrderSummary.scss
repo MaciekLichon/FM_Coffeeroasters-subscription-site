@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+.summary {
+
+  &__content {
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    background-color: #2C343E;
+    color: #FFF;
+    margin-bottom: 3.5rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text-accent {
+    color: $clr-cyan;
+  }
+
+  &__btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
